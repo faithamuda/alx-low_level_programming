@@ -1,2 +1,4 @@
-A new project "0x05-pointers_arrays_strings"
-tasks0 - 9
+# New project >>> 0x05-pointers_arrays_strings
+
+
+# Title: Pointers, Arrays, and Strings
