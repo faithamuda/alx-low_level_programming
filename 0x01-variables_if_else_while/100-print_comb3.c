@@ -19,16 +19,19 @@ int main(void)
                          {
 			        putchar('0' + i);
                                 putchar('0' + j);
-		          }
-		          if (i != 8 && j != 9)
-		                {
+
+		                 if (i != 8 && j != 9)
+		                 {
 			                 putchar(',');
 			                 putchar(' ');
-		                }
-                }
-        }
-	putchar('\n');
+		                 }
+                          }
+                          else
+                          continue;
+                   }
+          }
+	  putchar('\n');
 
-	return (0);
+	  return (0);
 }
 
