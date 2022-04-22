@@ -3,22 +3,23 @@
 /**
  * main - Entry point
  *
- * ==Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int first;
-	int second;
+	int i;
+	int j;
 
-	for (first = 0; first <= 9; first++)
+	for (i = 0; i <= 8; i++)
 	{
-		putchar('0' + first);
-		for (second = 0; second <= 9; second++)
-		{
-			putchar('0' + second);
-		}
-		if (first != 9)
+                for (j = 1; j <= 9; j++)
+		        if (j > i)
+                        {
+			        putchar('0' + i);
+                                putchar('0' + j);
+		        }
+		if (i != 8 && j != 9)
 		{
 			putchar(',');
 			putchar(' ');
