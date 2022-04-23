@@ -12,10 +12,9 @@
 
 void puts_half(char *str)
 {
-	int len, j, k;
+	int len, mid, n;
 
 	len = 0;
-
 	/*find length pf array to null character */
 	while (str[len] != '\0')
 	{
@@ -24,21 +23,15 @@ void puts_half(char *str)
 	/* check if number of character is even or odd */
 	if (len % 2 == 0)
 	{
-		/** 
- 		 * if lenght is even
-		 * k is half of total lenght
- 		*/
-		for (k = len / 2; str[k] != '\0'; k++)
-			_putchar(str[k]);
+		mid = len / 2;
+		for (n = mid; n < len; str[n] != '\0'; n++)
+			_putchar(str[n]);
 	}
 	else
 	{
-		/**
-		 * if lenght is odd
- 		 * j is half of length - 1
- 		*/
-		for (j = (len - 1) / 2; j < len; j++)
-			_putchar(str[1 + j]);
+		mid = (len - 1) / 2;
+		for (n = mid + 1; n < len; n++)
+			_putchar(str[n]);
 	}
 	_putchar('\n');
 }
