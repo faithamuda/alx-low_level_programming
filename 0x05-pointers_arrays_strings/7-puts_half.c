@@ -37,7 +37,8 @@ void puts_half(char *str)
 		 * if lenght is odd
  		 * j is half of length - 1
  		*/
-		for (j = (len - 1) / 2; j < len; str[j] != '\0'; j++)
+		for (j = (len - 1) / 2; str[j] != '\0'; j++)
+			j < len;
 			_putchar(str[1 + j]);
 	}
 	_putchar('\n');
