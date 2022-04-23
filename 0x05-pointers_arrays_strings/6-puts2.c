@@ -3,8 +3,8 @@
 /**
  * puts2 - print every other character of a string
  * starting with the first
- * *str: pointer to string
- * str: input string
+ * @*str: pointer to string
+ * @str: input string
  *
  * Return: Nothing
  */
