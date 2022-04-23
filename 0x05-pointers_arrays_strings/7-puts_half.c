@@ -26,7 +26,7 @@ void puts_half(char *str)
 	{
 		/** 
  		 * if lenght is even
-		 * j is half of total lenght
+		 * k is half of total lenght
  		*/
 		j = i / 2;
 		for (k = j; k < i; k++)
@@ -36,7 +36,7 @@ void puts_half(char *str)
 	{
 		/**
 		 * if lenght is odd
- 		 * j is half of length - 1
+ 		 * k is half of length - 1
  		*/
 		j = (i - 1) / 2;
 		for (k = j; k < i; k++)
