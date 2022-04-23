@@ -7,7 +7,7 @@
  * print the last n characters
  * where n = (length_of_the_string - 1) / 2
  *
- * Return: Nothing 
+ * Return: Nothing
 */
 
 void puts_half(char *str)
