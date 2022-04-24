@@ -1,5 +1,8 @@
-nclude <main.h>
+#include <main.h>
 
 /**
- * _strcat
+ * _strcat - function that concatenates two strings
+ * @src: string source
+ * @dest: string destination
+ *
  *
