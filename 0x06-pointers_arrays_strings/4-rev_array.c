@@ -20,7 +20,7 @@ void reverse_array(int *a, int n)
 	* the first array then place
  	* value in temp to last array
 	*/
-	while (i > h)
+	while (i < h)
 	{
 		temp = a[i];
 		a[i] = a[h];
