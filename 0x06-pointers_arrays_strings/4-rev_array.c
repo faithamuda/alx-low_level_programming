@@ -21,7 +21,7 @@ void reverse_array(int *a, int n)
  	* value in temp to last array
 	*/
 	while (i > h)
-	[
+	{
 		temp = a[i];
 		a[i] = a[h];
 		a[h] = temp;
