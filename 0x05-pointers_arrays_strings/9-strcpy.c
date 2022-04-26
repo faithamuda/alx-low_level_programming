@@ -10,7 +10,7 @@
  * Return: valued pointed to dest
  */
 
-/* _strcpy - function that copies */
+/* *_strcpy - function that copies */
 char *_strcpy(char *dest, char *src)
 {
 	int len, i;
