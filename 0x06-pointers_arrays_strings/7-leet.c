@@ -25,7 +25,7 @@ char *leet(char *str)
 		{/* check if str char corresponds to src char and substitute */
 			if (str[x] == src[y])
 				str[x] = subs[y];
-		} /* move to next str char */
+		} /* move through to next str char */
 		x++;
 	}
 	return (str);
