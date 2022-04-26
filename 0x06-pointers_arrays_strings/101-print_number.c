@@ -21,7 +21,7 @@ void print_number(int n)
 	/* print digits one by one using recursion */
 	if (j / 10)
 	{/* recursive call🤷‍♀️ */
-		print_number(j / 10); 
+		print_number(j / 10);
 	}
 	_putchar('0' + (j % 10));
 }
