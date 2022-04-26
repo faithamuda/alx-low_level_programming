@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * rot13 - function that encodes a string into using rot13. 
+ * rot13 - function that encodes a string into using rot13.
  * @str: pointer to string to be encoded.
  *
- * You can only use if statement once and only use two loops in your code. 
+ * You can only use if statement once and only use two loops in your code.
  * You are not allowed to use switch.
  *
  * Return: the encoded string.
@@ -20,12 +20,12 @@ char *rot13(char *str)
 		for (y = 0; y <= 52; y++)
 		{
 			if (str[x] == alpha[y])
-			{				
-				str[x] = rot13[y];			
-				break;			
+			{
+				str[x] = rot13[y];
+				break;
 			}
 		}
-		x++;	
+		x++;
 	}
 	return (str);
 }
