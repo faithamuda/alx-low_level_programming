@@ -12,14 +12,14 @@
 char *rot13(char *str)
 {
 	int x = 0, y;
-	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char Alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (str[x] != '\0')
 	{
 		for (y = 0; y <= 52; y++)
 		{
-			if (str[x] == alpha[y])
+			if (str[x] == Alpha[y])
 			{
 				str[x] = rot13[y];
 				break;
