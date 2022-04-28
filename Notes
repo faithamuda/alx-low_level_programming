@@ -1,0 +1,14 @@
+behind schedule
+Device misbehaving
+No phone, no laptop
+barely made it to the 80% cutoff
+I have not done 0x02-0x05
+
+
+
+Recursion.
+When solving a problem recursively the first thing to do
+is to find the base case
+If not the code becomes an infinite loop and eventually crashes due to 
+Stack overload
+The base case is like the endpoint of your commamd
