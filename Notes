@@ -3,6 +3,8 @@ Device misbehaving
 No phone, no laptop
 barely made it to the 80% cutoff
 I have not done 0x02-0x05
+not done 0×07
+score down to 76
 
 
 
@@ -12,3 +14,7 @@ is to find the base case
 If not the code becomes an infinite loop and eventually crashes due to 
 Stack overload
 The base case is like the endpoint of your commamd
+the recursive case
+
+while loop
+in while loop we initialize a variable only when we are using the while loop (in which the variable will be used) just after (initializing) it.
