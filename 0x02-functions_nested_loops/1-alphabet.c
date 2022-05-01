@@ -5,7 +5,7 @@
  * followed by a newline
  * @void: no argument
  *
- * Return:: Nothing 
+ * Return:: Nothing
  */
 
 void print_alphabet(void)
