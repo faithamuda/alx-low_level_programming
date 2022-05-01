@@ -28,7 +28,8 @@ void times_table(void)
 			else if (mp <= 9)
 			{
 				_putchar(',');
-				_putchar('  ');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(mp + '0');
 			}
 		}
