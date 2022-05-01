@@ -7,7 +7,7 @@
  * Return: Nothing
  */
 
-void times_table(int n)
+void times_table(void)
 {
 	int j, k;
 
@@ -17,7 +17,10 @@ void times_table(int n)
 		{
 			_putchar(j * k +'0');
 			if (k < 9)
-				_putchar(', ');
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			_putchar('\n');
 		}
 	}
