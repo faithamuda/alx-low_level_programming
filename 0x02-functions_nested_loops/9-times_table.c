@@ -1,17 +1,3 @@
-
-I 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-$ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9$
-
-j is o
-for j is less equal 9
-for k is 0
-k is less equal 9
-  print k*j
-    if k is not equal 9
-    print, nd space
-  print newline
-  
-  
 #include "main.h"
 
 /**
@@ -20,11 +6,19 @@ k is less equal 9
  *
  * Return: Nothing
  */
- 
+
 void times_table(int n)
 {
-int j = 0, k;
-for ( 
+	int j, k;
+
+	for (j = 0; j <= 9; j++)
+	{
+		for (k = 0; k <= 9; k++)
+		{
+			_putchar(j * k +'0');
+			if (k < 9)
+				_putchar(', ');
+			_putchar('\n');
+		}
+	}
 }
-	
-	
