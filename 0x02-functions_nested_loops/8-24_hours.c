@@ -1,8 +1,3 @@
-Write a function that , starting from 00:00 to 23:59.starting from 00:00 to 23:59.
-
-Prototype: void (void);
-You can listen to this soundtrack while coding :)
-  
 #include "main.h"
   
 /**
@@ -19,14 +14,14 @@ void jack_bauer(void)
 
 	for (j = 0; @j < 24; j++)
 	{
-for (k = 0; k < 60; k++)
-{
-_putchar(j / 10 + '0');
-_putchar(j % 10 + '0');
-_putchar(':');
-_putchar(k / 10 + '0');
-_putchar(k % 10 + '0');
-}
-}
-
+		for (k = 0; k < 60; k++)
+		{
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar(':');
+			_putchar(k / 10 + '0');
+			_putchar(k % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
