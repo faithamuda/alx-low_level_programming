@@ -7,11 +7,11 @@
  * Return : absolute value of integer
  */
 
-int _abs(int)
+int _abs(int c)
 {
-if (int >= 0)
-return (int);
-if (int < 0)
-return (0 - int);
+if (c >= 0)
+return (c);
+if (c < 0)
+return (0 - c);
 }
  
