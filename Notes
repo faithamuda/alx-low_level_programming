@@ -18,3 +18,11 @@ the recursive case
 
 while loop
 in while loop we initialize a variable only when we are using the while loop (in which the variable will be used) just after (initializing) it.
+
+argc and argv
+In c a char* means a string
+so char* argv[] is an array of strings
+argc is argument count..
+   it is the number of things that we entered into the command prompt
+     when running our house executable
+
