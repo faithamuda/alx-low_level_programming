@@ -11,5 +11,6 @@
 
 int _atoi(char *s)
 {
-
+if (s >= 48)
+return (0);
 }
