@@ -7,6 +7,7 @@
  * @argc: argument count
  * @argv: array of strings which contains
  * the program's command line arguments
+ * @mul: multiplication result
  *
  * Return: 0 if two arguments or 1 if not
  */
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 int mul = atoi(argv[1]) * atoi(argv[2]);
 
 if (argc = 3)
-printf("%d\n", k);
+printf("%d\n", mul);
 return (0);
 else
 printf("Error\n");
