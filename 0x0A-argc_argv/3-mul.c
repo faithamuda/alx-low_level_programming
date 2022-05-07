@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - print the result of the multiplication of
+ * two numbers, followed by a new line
+ * @argc: argument count
+ * @argv: array of strings which contains
+ * the program's command line arguments
+ *
+ * Return: 0 if two arguments or 1 if not
+ */
+
+int main(int argc, char *argv[])
+{
+int mul = atoi(argv[1]) * atoi(argv[2]);
+
+if (argc = 3)
+printf("%d\n", k);
+return (0);
+else
+printf("Error\n");
+return (1);
+}
