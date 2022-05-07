@@ -1,4 +1,4 @@
-#include <stdio.h.>
+#include <stdio.h>
 
 /**
  * main - prints it's name, followed by new line
