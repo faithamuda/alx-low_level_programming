@@ -12,7 +12,7 @@
  * Return: 0 if two arguments or 1 if not
  */
 
-int main(int argc, char *argv[])
+int main(int argc, *argv[])
 {
 	int mul = atoi(argv[1]) * atoi(argv[2]);
 
@@ -21,9 +21,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", mul);
 		return (0);
 	}
-	else if	(argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("Error\n");
+	return (1);
 }
