@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-
-=======
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the minimum number of coins to make change for an amount.
  * of money.
@@ -39,4 +37,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", ncoins);
 	return (0);
 }
->>>>>>> e8dd54e8b57b18698615a6fba4b61b5edda7efe1
