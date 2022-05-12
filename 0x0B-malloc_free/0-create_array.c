@@ -1,8 +1,4 @@
-
-Returns a pointer to the array, or NULL if it fails
-
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -22,7 +18,7 @@ char *a
 if (size == 0)
 return (NULL)
 
-*a = malloc(size * sizeof(char));
+a = malloc(size * sizeof(char));
 
 if (a == NULL)
 return (NULL);
