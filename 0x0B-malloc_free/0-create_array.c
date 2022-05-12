@@ -6,7 +6,6 @@
  * and initializes it with a specific char
  * @size: array size
  * @c: char to initialize array with
- * @a: array name
  *
  * Return: pointer to array
  */
