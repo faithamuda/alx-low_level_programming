@@ -13,18 +13,20 @@
 
 char *create_array(unsigned int size, char c)
 {
-unsigned int j;
-char *a
+	unsigned int j;
+	char *a;
 
-if (size == 0)
-return (NULL)
+	if (size == 0)
+		return (NULL);
 
-a = malloc(size * sizeof(char));
+	a = malloc(size * sizeof(char));
 
-if (a == NULL)
-return (NULL);
-
-for (j = 0; j < size; j++)
-a[j] = c;
-return (a);
+	if (a == NULL)
+		return (NULL);
+	
+	for (j = 0; j < size; j++)
+	{
+		a[j] = c;
+		return (a);
+	}
 }
