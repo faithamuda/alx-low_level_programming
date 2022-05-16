@@ -11,24 +11,24 @@
 
 char *_strdup(char *str)
 {
-	int dup = 0, len = 0;
+	unsigned int len, dup;
 	char *s;
 
 	/* calculate the length of str */
-	if (str[len] != '\0')
-		len++;
-	else if (str == NULK)
+	
+	if (str == NULL)
 		return (NULL);
 
-	s = malloc((len + 1) * sizeof(char));
+	for (len = 0; str[len] != '\0'; len++)
+		;
+
+	s =(char *)malloc((len + 1) * sizeof(char));
 
 	if (s == NULL)
 		return (NULL);
 
-	while (s != '\0')
-	{
+	for (dup = 0; dup <= len; dup++)
 		s[dup] = str[dup];
-		dup++;
-	}
+
 	return (s);
 }
