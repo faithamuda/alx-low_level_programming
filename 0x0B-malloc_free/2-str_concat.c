@@ -20,5 +20,27 @@ The function should return NULL on failure
 
 char *str_concat(char *s1, char *s2)
 {
-unsigned int j,k;
+unsigned int a, b, c, d;
+char *str;
+
+if (s1 == NULL)
+"";
+if  (s2 == NULL)
+"";
+for (a = 0; s1[a] != '\0'; a++)
+;
+
+for (b = 0; s2[b] != '\0'; b++)
+;
+
+str = malloc(sizeof(char) * ((a + b) + 1));
+
+if (str == NULL)
+free str
+return NULL
+
+
+
+
+
 }
