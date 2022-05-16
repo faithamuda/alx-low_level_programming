@@ -1,12 +1,3 @@
-Write a function that concatenates two strings.
-
-Prototype: char *(char *s1, char *s2);
-The returned pointer should point to a newly
-allocated space in memory which contains the contents of s1,
-followed by the contents of s2, and null terminated
-if NULL is passed, treat it as an empty string
-The function should return NULL on failure
-
 #include "main.h"
 #include <stdlib.h>
 
@@ -36,11 +27,13 @@ for (b = 0; s2[b] != '\0'; b++)
 str = malloc(sizeof(char) * ((a + b) + 1));
 
 if (str == NULL)
-free str
-return NULL
+free (str);
+return (NULL);
 
+for (c = 0; c < a; c++)
+str[c] = s1[c];
 
-
-
-
+for (d = 0; d <= b; c++; d++)
+str[c] = s2[d];
+return (str);
 }
