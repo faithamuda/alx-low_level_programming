@@ -15,14 +15,14 @@ char *_strdup(char *str)
 	char *s;
 
 	/* calculate the length of str */
-	
+
 	if (str == NULL)
 		return (NULL);
 
 	for (len = 0; str[len] != '\0'; len++)
 		;
 
-	s =(char *)malloc((len + 1) * sizeof(char));
+	s = (char *)malloc((len + 1) * sizeof(char));
 
 	if (s == NULL)
 		return (NULL);
