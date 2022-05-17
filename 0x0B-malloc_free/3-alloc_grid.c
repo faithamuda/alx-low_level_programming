@@ -11,21 +11,23 @@
 
 int **alloc_grid(int width, int height)
 {
-int *grid, j, k, init = 0;
+	int *grid, j, k, init = 0;
 
-if (width <=0 || height <= 0)
-return (NULL);
+	if (width <=0 || height <= 0)
+		return (NULL);
 
-grid = malloc(sizeof(int) * (width * height));
+	grid = malloc(sizeof(int) * (width * height));
 
-if (grid == NULL)
-return (NULL);
-free(grid);
+	if (grid == NULL)
+	{
+		free(grid);
+		return (NULL);
+	}
 
-for (j = 0; j < w; j++)
-{
-for (k = 0; k < h; k++)
-grid[j][k] = init;
-}
-return (grid);
+	for (j = 0; j < width; j++)
+	{
+		for (k = 0; k < height; k++)
+			grid[j][k] = init;
+	}
+	return (grid);
 }
