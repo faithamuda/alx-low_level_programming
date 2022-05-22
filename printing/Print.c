@@ -8,62 +8,63 @@ int Myprintf(char* format, ...);
 
 int Myprintf(char* format, ...)
 {
-char* traverse;
-int i;
-char* s;
-char* output;
+	char* traverse;
+	int i;
+	char* s;
+	char* output;
 
 //Module 1: Initializing Myprintf's arguments
-va_list arg;
-va_start(arg, format);
 
-for (traverse = format; *traverse != '\0'; traverse++)
-{
-while (*traverse != '%' && *traverse != '\0')
-{
-output += *traverse; // Append char to current string.
-traverse++;
-}
+	va_list arg;
+	va_start(arg, format);
 
-traverse++;
+	for (traverse = format; *traverse != '\0'; traverse++)
+	{
+		while (*traverse != '%' && *traverse != '\0')
+		{
+			output += *traverse; // Append char to current string.
+			traverse++;
+		}
+		traverse++;
 
 //Module 2: Fetching and executing arguments
-switch (*traverse)
-{
 
-case 'c': i = va_arg(arg, int); //Fetch char argument
+		switch (*traverse)
+		{
+			case 'c': i = va_arg(arg, int); //Fetch char argument
 
-output += convert((i - 48), 10);
-break;
+				  output += convert((i - 48), 10);
+				  break;
 
-case 'd': i = va_arg(arg, int); //Fetch Decimal/Integer argument
-if (i < 0)
-{
-i = -i;
-output += '-';
-}
-output += convert(i, 10);
-break;
+			case 'd': i = va_arg(arg, int); //Fetch Decimal/Integer argument
+				  if (i < 0)
+				  {
+					  i = -i;
+					  output += '-';
+				  }
+				  output += convert(i, 10);
+				  break;
 
-case 'o': i = va_arg(arg, unsigned int); //Fetch Octal representation
-output += convert(i, 8);
-break;
+			case 'o': i = va_arg(arg, unsigned int); //Fetch Octal representation
+				  output += convert(i, 8);
+				  break;
 
-case 's': s = va_arg(arg, char*); //Fetch string
-output += s;
-break;
+			case 's': s = va_arg(arg, char*); //Fetch string
+				  output += s;
+				  break;
 
-case 'x': i = va_arg(arg, unsigned int); //Fetch Hexadecimal representation
-output += convert(i, 16);
-break;
-}
-}
+			case 'x': i = va_arg(arg, unsigned int); //Fetch Hexadecimal representation
+				  output += convert(i, 16);
+				  break;
+		}
+	}
 
 //Module 3: Closing argument list to necessary clean-up
 // Module 3.1: Output the generated string.
-{
-puts(output);
-va_end(arg);
+
+	puts(output);
+
+	va_end(arg);
 }
 nbytes = strlen(output);
 return (nbytes);
