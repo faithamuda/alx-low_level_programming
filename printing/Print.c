@@ -1,9 +1,9 @@
-void Myprintf(char* format, ...)
+int Myprintf(char* format, ...)
 {
 char* traverse;
 int i;
 char* s;
-char output;
+char* output;
 
 //Module 1: Initializing Myprintf's arguments
 va_list arg;
