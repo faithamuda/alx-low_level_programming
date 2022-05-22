@@ -3,7 +3,7 @@ void Myprintf(char* format, ...)
 char* traverse;
 int i;
 char* s;
-std::string output;
+char output;
 
 //Module 1: Initializing Myprintf's arguments
 va_list arg;
@@ -53,8 +53,12 @@ break;
 
 //Module 3: Closing argument list to necessary clean-up
 // Module 3.1: Output the generated string.
-puts(output.c_str());
+{
+puts(output);
 va_end(arg);
+}
+nbytes = strlen(output);
+return (nbytes);
 }
 /**
  * convert - converts number and base into string
@@ -63,15 +67,12 @@ va_end(arg);
  * @lowercase: flag if hexa values need to be lowercase
  * Return: result string
  */
-char *convert(unsigned long int num, int base, int lowercase)
+char *convert(unsigned int num, int base)
 {
-	static char *rep;
+	static char *rep[]= "0123456789ABCDEF";
 	static char buffer[50];
 	char *ptr;
 
-	rep = (lowercase)
-		? "0123456789abcdef"
-		: "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
 	do {
