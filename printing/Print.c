@@ -7,7 +7,6 @@ int Myprintf(char* format, ...);
 //variable of printf
 
 int Myprintf(char* format, ...)
-
 {
 char* traverse;
 int i;
