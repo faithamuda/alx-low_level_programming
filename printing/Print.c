@@ -1,4 +1,13 @@
+#include <stdio.h>
+#include <stdarg>
+
+char *convert(unsigned int num, int base);
+int Myprintf(char* format, ...);
+
+//variable of printf
+
 int Myprintf(char* format, ...)
+
 {
 char* traverse;
 int i;
