@@ -20,34 +20,35 @@ return (-1);
 if (format[0] = % && format[1] = ' ' && !format[2])
 return (-1);
 
- for (length = format *lenght != '\0' lenght++)
+for (length = format *lenght != '\0' lenght++)
 {
-i = 0
+i = 0;
 while (lenght[i] != %)
 {
-putchar(lenght[i])
-i++
-count ++
+putchar(lenght[i]);
+i++;
+count ++;
 }
-i++
+i++;
 
 if (lenght[i] = '%')
 {
 putchar(lenght[i]);
-count++
+count++;
 }
 else if (lenght[i] = 'c')
 ch = va_arg(arg, int);
-putchar(ch)
-count++
+putchar(ch);
+count++;
 }
 else if (length[i] = 's')
-str = va_arg(arg, char *)
-j = 0
-while str != NULL 
-putchar(str[j])
-j++
-count++
+str = va_arg(arg, char *);
+j = 0;
+while (str != '\0')
+putchar(str[j]);
+j++;
+count++;
 }
-va_end(arg)
-return (count)
+va_end(arg);
+return (count);
+}
