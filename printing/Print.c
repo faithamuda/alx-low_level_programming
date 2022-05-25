@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdarg>
+#include <stdarg.h>
 
 char *convert(unsigned int num, int base);
-int Myprintf(char* format, ...);
+int _printf(char* format, ...);
 
 //variable of printf
 
@@ -63,11 +63,9 @@ int Myprintf(char* format, ...)
 // Module 3.1: Output the generated string.
 
 	puts(output);
-
 	va_end(arg);
-}
-nbytes = strlen(output);
-return (nbytes);
+	nbytes = strlen(output);
+	return (nbytes);
 }
 /**
  * convert - converts number and base into string
@@ -78,7 +76,7 @@ return (nbytes);
  */
 char *convert(unsigned int num, int base)
 {
-	static char *rep[]= "0123456789ABCDEF";
+	static char rep[]= "0123456789ABCDEF";
 	static char buffer[50];
 	char *ptr;
 
