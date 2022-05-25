@@ -9,7 +9,6 @@
 int _printf(const char *format, ...)
 {
 	char *str;
-
 	char *lenght;
 	int i, j, count;
 	count = 0;
@@ -17,12 +16,12 @@ char ch;
 	va_list arg;
 	va_start(arg, format);
 
-	if (!format || format[0] = % && !format[1])
+	if (!format || format[0] = '%' && !format[1])
 		return (-1);
-	if (format[0] = % && format[1] = ' ' && !format[2])
+	if (format[0] = '%' && format[1] = ' ' && !format[2])
 		return (-1);
 
-	for (length = format; *lenght != '\0'; lenght++)
+	for (lenght = format; *lenght != '\0'; lenght++)
 	{
 		i = 0;
 		while (lenght[i] != '%')
@@ -44,7 +43,7 @@ char ch;
 			putchar(ch);
 			count++;
 		}
-		else if (length[i] = 's')
+		else if (lenght[i] = 's')
 		{
 			str = va_arg(arg, char *);
 			j = 0;
