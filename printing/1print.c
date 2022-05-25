@@ -48,7 +48,7 @@ char ch;
 		{
 			str = va_arg(arg, char *);
 			j = 0;
-			while (str != '\0')
+			while (*str != '\0')
 				putchar(str[j]);
 			j++;
 			count++;
