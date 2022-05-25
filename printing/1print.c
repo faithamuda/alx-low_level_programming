@@ -9,10 +9,11 @@
 int _printf(const char *format, ...)
 {
 	char *str;
+
 	char *lenght;
-	int i, j,count;
+	int i, j, count;
 	count = 0;
-	
+char ch;
 	va_list arg;
 	va_start(arg, format);
 
@@ -21,10 +22,10 @@ int _printf(const char *format, ...)
 	if (format[0] = % && format[1] = ' ' && !format[2])
 		return (-1);
 
-	for (length = format *lenght != '\0' lenght++)
+	for (length = format; *lenght != '\0'; lenght++)
 	{
 		i = 0;
-		while (lenght[i] != %)
+		while (lenght[i] != '%')
 		{
 			putchar(lenght[i]);
 			i++;
