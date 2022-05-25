@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 	char *str;
-	char *lenght;
+	char *len;
 	int i, j, count;
 	count = 0;
 char ch;
@@ -21,29 +21,29 @@ char ch;
 	if (format[0] = '%' && format[1] = ' ' && !format[2])
 		return (-1);
 
-	for (lenght = format; *lenght != '\0'; lenght++)
+	for (len = (char *)format; *len != '\0'; len++)
 	{
 		i = 0;
-		while (lenght[i] != '%')
+		while (*len[i] != '%')
 		{
-			putchar(lenght[i]);
+			putchar(*len[i]);
 			i++;
 			count ++;
 		}
 		i++;
 
-		if (lenght[i] = '%')
+		if (*len[i] = '%')
 		{
-			putchar(lenght[i]);
+			putchar(*len[i]);
 			count++;
 		}
-		else if (lenght[i] = 'c')
+		else if (*len[i] = 'c')
 		{
 			ch = va_arg(arg, int);
 			putchar(ch);
 			count++;
 		}
-		else if (lenght[i] = 's')
+		else if (*len[i] = 's')
 		{
 			str = va_arg(arg, char *);
 			j = 0;
